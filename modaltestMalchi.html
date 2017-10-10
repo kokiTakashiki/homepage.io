@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>[DEMO]jQueryでモーダルウィンドウを作る方法</title>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+$(function(){
+    // 「.modal-open」をクリック
+    $('.modal-open').click(function(){
+        // オーバーレイ用の要素を追加
+        $('body').append('<div class="modal-overlay"></div>');
+        // オーバーレイをフェードイン
+        $('.modal-overlay').fadeIn('slow');
+
+        // モーダルコンテンツのIDを取得
+        var modal = '#' + $(this).attr('data-target');
+        // モーダルコンテンツの表示位置を設定
+        modalResize();
+         // モーダルコンテンツフェードイン
+        $(modal).fadeIn('slow');
+
+        // 「.modal-overlay」あるいは「.modal-close」をクリック
+        $('.modal-overlay, .modal-close').off().click(function(){
+            // モーダルコンテンツとオーバーレイをフェードアウト
+            $(modal).fadeOut('slow');
+            $('.modal-overlay').fadeOut('slow',function(){
+                // オーバーレイを削除
+                $('.modal-overlay').remove();
+            });
+        });
+
+        // リサイズしたら表示位置を再取得
+        $(window).on('resize', function(){
+            modalResize();
+        });
+
+        // モーダルコンテンツの表示位置を設定する関数
+        function modalResize(){
+            // ウィンドウの横幅、高さを取得
+            var w = $(window).width();
+            var h = $(window).height();
+
+            // モーダルコンテンツの表示位置を取得
+            var x = (w - $(modal).outerWidth(true)) / 2;
+            var y = (h - $(modal).outerHeight(true)) / 2;
+
+            // モーダルコンテンツの表示位置を設定
+            $(modal).css({'left': x + 'px','top': y + 'px'});
+        }
+
+    });
+});
+</script>
+
+<style>
+.modal-content {
+    position:fixed;
+    display:none;
+    z-index:2;
+    width:50%;
+    margin:0;
+    padding:10px 20px;
+    border:2px solid #aaa;
+    background:#fff;
+}
+
+.modal-content p {
+    margin:0;
+    padding:0;
+}
+
+.modal-overlay {
+    z-index:1;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+
+.modal-open {
+    color:#00f;
+    text-decoration:underline;
+}
+
+.modal-open:hover {
+    cursor:pointer;
+    color:#f00;
+}
+
+.modal-close {
+    color:#00f;
+    text-decoration:underline;
+}
+
+.modal-close:hover {
+    cursor:pointer;
+    color:#f00;
+}
+</style>
+</head>
+<body>
+<a data-target="con1" class="modal-open">リンク1</a>
+<a data-target="con2" class="modal-open">リンク2</a>
+<a data-target="con3" class="modal-open">リンク3</a>
+<a data-target="con4" class="modal-open">リンク4</a>
+<a data-target="con5" class="modal-open">リンク5</a>
+
+<div id="con1" class="modal-content">
+    <p>リンク1の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<div id="con2" class="modal-content">
+    <p>リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。リンク2の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<div id="con3" class="modal-content">
+    <p>リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。リンク3の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<div id="con4" class="modal-content">
+    <p>リンク4の内容です。リンク4の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<div id="con5" class="modal-content">
+    <p>リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。リンク5の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<p>
+スクロールしてみてください。モーダルウィンドウは固定されているのがわかるかと思います。<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+終わり。
+</p>
+<p><a href="http://coolwebwindow.com/jquery-lab/archives/304">&lt;&lt; 記事に戻る</a></p>
+</body>
+</html>

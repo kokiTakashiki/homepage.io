@@ -1,0 +1,111 @@
+/*-----------------------------------
+style
+-----------------------------------*/
+body {
+	//background: #2D2D2D;
+	//color: #fff;
+	font-family:"Hiragino Kaku Gothic Pro","MS PGothic", sans-serif;
+}
+.filterArea{
+	width: 60%;
+	margin: 10px auto 0 auto;
+	padding: 20px;
+	border: solid 1px #FFFFFF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.filterArea h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.filterArea .filter_life,
+.filterArea .filter_tag{
+	margin-bottom: 20px;
+}
+
+.filterArea h2{
+	margin-bottom:5px;
+}
+
+.resultArea{
+	margin-top: 20px;
+}
+
+.productArea {
+	-js-display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.productCntArea p {
+	text-align: right;
+	padding-right: 20px;
+	font-size: 14px;
+	color:#A4A4A4;
+}
+.productArea .product {
+	width: calc(33.333% - 20px);
+	margin: 10px 10px 20px 10px;
+}
+.productArea .product .photo {
+	margin-bottom: 10px;
+}
+.productArea .product img {
+	width: 100%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+.productArea .product .productTitle {
+	line-height: 1.4;
+	font-size: 18px;
+}
+.productArea .product .productLife {
+	line-height: 1.4;
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-align: right;
+}
+.productArea .product .tag {
+	margin-bottom: 5px;
+}
+.productArea .product .tag li {
+	display: inline-block;
+	font-size: 10px;
+	margin-bottom: 3px;
+	padding: 3px;
+	background: #C0C0C0;
+	color: #2D2D2D;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.productArea .product .description {
+	line-height: 1.4;
+	font-size: 12px;
+}
+
+/* ã‚¹ãƒžãƒ›ç‰ˆè¨­å®š */
+@media (max-width: 767px) {
+.filterArea{
+	width: 90%;
+	padding: 10px 10px 20px 10px;
+}
+.productCntArea p {
+	padding-right: 10px;
+}
+.productArea {
+	padding: 5px;
+}
+.productArea .product {
+	width: calc(50% - 10px);
+	margin: 5px 5px 10px 5px;
+}
