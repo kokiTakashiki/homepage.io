@@ -1,6 +1,7 @@
 .main {
 	width: 100%;
 	//border: 1px solid #000;
+	//font-size: 200%;
 	text-align: center;
 }
 .main div	{
@@ -17,6 +18,19 @@
 }
 
 .title div	{
+	width: 450;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.titleBer {
+	width: 100%;
+	//border: 1px solid #000;
+	text-align: center;
+}
+
+.titleBer div	{
 	width: 500;
 	//border: 1px solid #FF0000;
 	margin: 0 auto;

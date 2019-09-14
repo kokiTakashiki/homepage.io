@@ -1,11 +1,11 @@
 .main {
 	width: 100%;
 	//border: 1px solid #000;
-	font-size: 200%;
+	font-size: 170%;
 	text-align: center;
 }
 .main div	{
-	width: 450;
+	width: 400;
 	//border: 1px solid #FF0000;
 	margin: 0 auto;
 	text-align: left;
@@ -13,13 +13,27 @@
 
 .title {
 	width: 100%;
-	//border: 1px solid #000;
 	font-size: 200%;
+	//border: 1px solid #000;
 	text-align: center;
 }
 
 .title div	{
-	width: 500;
+	width: 400;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.titleBer {
+	width: 100%;
+	font-size: 200%;
+	//border: 1px solid #000;
+	text-align: center;
+}
+
+.titleBer div	{
+	width: 400;
 	//border: 1px solid #FF0000;
 	margin: 0 auto;
 	text-align: center;
@@ -28,10 +42,11 @@
 .chgEng {
 	width: 100%;
 	//border: 1px solid #000;
+	font-size: 200%;
 	text-align: center;
 }
 .chgEng div	{
-	width: 450;
+	width: 400;
 	//border: 1px solid #FF0000;
 	margin: 0 auto;
 	text-align: right;
