@@ -25,6 +25,12 @@
     background-color:rgba(0,0,0,0.75);
 }
 
+.main {
+	width: 100%;
+	//border: 1px solid #000;
+	text-align: center;
+}
+
 .modal-open {
     color:#00f;
     text-decoration:underline;
