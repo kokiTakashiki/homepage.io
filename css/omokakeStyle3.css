@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
+
+.main {
+	width: 100%;
+	//border: 1px solid #000;
+	font-size: 120%;
+	color: white;
+	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.main div	{
+	width: 395;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	color: white;
+	text-align: left;
+}
+
+.main img {
+	width: 100%;
+	width: 395;
+	text-align: center;
+	border-radius: 33px;
+}
+
+.imgtop {
+	//width: 100%;
+	//width: 400;
+	float: center;
+	text-align: center;
+}
+
+.imgtop img {
+	width: 100%;
+	width: 400;
+	//float: right;
+	//margin: 0 auto;
+	text-align: left;
+	//border-radius: 33px;
+}
+
+.title {
+	width: 100%;
+	font-size: 300%;
+	//border: 1px solid #000;
+	//text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title div	{
+	width: 350;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	color: white;
+	text-align: left;
+}
+
+.titleBer {
+	width: 100%;
+	font-size: 160%;
+	//border: 1px solid #000;
+	text-align: center;
+}
+
+.titleBer div	{
+	width: 350;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.chgEng {
+	width: 100%;
+	//border: 1px solid #000;
+	font-size: 170%;
+	text-align: center;
+}
+.chgEng div	{
+	width: 400;
+	//border: 1px solid #FF0000;
+	margin: 0 auto;
+	text-align: right;
+}

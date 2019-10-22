@@ -5,81 +5,82 @@ $(function() {
 	================================================================*/
 	var allList = [
 		{
-			id: "portfolio-6",
-			life: 0.5,
+			id: "id002",
+			life: 2019,
+			title: "omokake",
+			//tag: ["鳥類","かっこいい","こわい","うごかない"],
+			description:
+			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。",
+			modalid: "mcon2"
+		},
+		{
+			id: "newPortfolio01_06",
+			life: 2015,
 			title: "fluffy",
 			//tag: ["哺乳類","かわいい","かっこいい"],
 			description: "test",
 			modalid: "mcon1"
-		}, 
-		{
-			id: "id002",
-			life: 000,
-			title: "test",
-			//tag: ["鳥類","かっこいい","こわい","うごかない"],
-			description: "test",
-			modalid: "mcon2"
-		}, 
-		{
-			id: "id003",
-			life: 000,
-			title: "test",
-			//tag: ["魚類","ほのぼの"],
-			description: "test",
-			modalid: "mcon3"
-		}, 
-		{
-			id: "id004",
-			life: 000,
-			title: "test",
-			//tag: ["鳥類","かっこいい","こわい"],
-			description: "test",
-			modalid: "mcon4"
-		}, 
-		{
-			id: "id005",
-			life: 000,
-			title: "test",
-			//tag: ["昆虫類","かっこいい","こわい"],
-			description: "test",
-			modalid: "mcon5"
-		}, 
-		{
-			id: "id006",
-			life: 000,
-			title: "test",
-			//tag: ["哺乳類","だれなん？"],
-			description: "test",
-			modalid: "mcon6"
-		}, 
-		{
-			id: "id007",
-			life: 000,
-			title: "test",
-			//tag: ["哺乳類","かわいい","ほのぼの"],
-			description: "test",
-			modalid: "mcon7"
-		}, 
-		{
-			id: "id008",
-			life: 000,
-			title: "test",
-			//tag: ["鳥類","こわい"],
-			description: "test",
-			modalid: "mcon8"
-		}
-	];		
+		},
+		// {
+		// 	id: "id003",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["魚類","ほのぼの"],
+		// 	description: "test",
+		// 	modalid: "mcon3"
+		// },
+		// {
+		// 	id: "id004",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["鳥類","かっこいい","こわい"],
+		// 	description: "test",
+		// 	modalid: "mcon4"
+		// },
+		// {
+		// 	id: "id005",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["昆虫類","かっこいい","こわい"],
+		// 	description: "test",
+		// 	modalid: "mcon5"
+		// },
+		// {
+		// 	id: "id006",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["哺乳類","だれなん？"],
+		// 	description: "test",
+		// 	modalid: "mcon6"
+		// },
+		// {
+		// 	id: "id007",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["哺乳類","かわいい","ほのぼの"],
+		// 	description: "test",
+		// 	modalid: "mcon7"
+		// },
+		// {
+		// 	id: "id008",
+		// 	life: 000,
+		// 	title: "test",
+		// 	//tag: ["鳥類","こわい"],
+		// 	description: "test",
+		// 	modalid: "mcon8"
+		// }
+	];
 
 	/*================================================================
 	スクリプトはじまり
 	================================================================*/
 	function init() {
-		
+
 		//イベント登録
 		//$(".filter_life select").on("change", onFilterChange);
 		//$(".filter_tag input").on("change", onFilterChange);
 		$(".filter_keyword button").on("click", onFilterChange);
-	
+
 
 		//最初は全て出力
 		refleshHtml(allList);
@@ -89,13 +90,14 @@ $(function() {
 	HTML出力
 	================================================================*/
 	function refleshHtml(list) {
-		
+
 		var outputHtml = '';
 
 		//出力する内容をoutputHtmlに格納
 		if (list.length > 0) {
 			_.each(list, function(line, i) {
 				outputHtml += '<div class="product">';
+				outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
 				//画像
 				outputHtml += '	<div class="photo"><img src="img/' + line.id + '.jpg" alt="' + line.title + '" /></div>';
 				//ボタン画像
@@ -107,16 +109,17 @@ $(function() {
                 outputHtml += ' 	<p>リンク1の内容です。</p> ';
                 outputHtml += ' 	<p><a class="modal-close">閉じる</a></p> ';
                 outputHtml += ' </div> ';*/
-                
+
 				outputHtml += '	<div class="info">';
-				outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
-				outputHtml += '		<p class="productLife">制作時間:&nbsp;' + line.life + 'yaer</p>';
+				//outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
+				//outputHtml += '		<p class="description">制作年:&nbsp;' + line.life + '</p>';
 				/*outputHtml += '		<ul class="tag">';
 				_.each(line.tag, function(tag, i){
-				outputHtml += '			<li>' + tag + '</li>';	
+				outputHtml += '			<li>' + tag + '</li>';
 				});
-				outputHtml += '		</ul>';		*/		
+				outputHtml += '		</ul>';		*/
 				outputHtml += '		<p class="description">' + line.description + '</p>';
+				outputHtml += '		<p class="description">制作年:&nbsp;' + line.life + '</p>';
 				outputHtml += '	</div>';
 				outputHtml += '<!--/.product--></div>';
 			});
@@ -125,10 +128,10 @@ $(function() {
 		}
 
 		//HTML出力（フェードインアニメーションつき）
-		$('.productArea').html(outputHtml);	
+		$('.productArea').html(outputHtml);
 		$('.productArea .product').css({opacity: 0}).each(function(i){$(this).delay(100 * i).animate({opacity:1}, 300);
 		});
-		
+
 		$('.modal-open').click(function(){
         	// オーバーレイ用の要素を追加
         	$('body').append('<div class="modal-overlay"></div>');
@@ -163,7 +166,7 @@ $(function() {
         		DebugPrint("ほげほげ");
             	// ウィンドウの横幅、高さを取得
             	var w = $(window).width();
-            	var h = $(window).height(); 
+            	var h = $(window).height();
 
             	// モーダルコンテンツの表示位置を取得
             	var x = (w - $(modal).outerWidth(true)) / 2;
@@ -173,18 +176,18 @@ $(function() {
             	$(modal).css({'left': x + 'px','top': y + 'px'});
         	}
     	});
-		
+
 		//検索件数表示
-		$('.productCntArea').html('<p>' + allList.length + '件中' + list.length + '件を表示しています。</p>');
+		//$('.productCntArea').html('<p>' + allList.length + '件中' + list.length + '件を表示しています。</p>');
 	}
 
 	/*================================================================
 	絞り込み条件を変更した時
 	================================================================*/
 	function onFilterChange(e) {
-		
-		var filterFncs = []; 
-		var result = []; 
+
+		var filterFncs = [];
+		var result = [];
 
 		/*//セレクトボックスの値を引数に指定した関数filterByLifeをfilterFuncs配列に格納
 		filterFncs.push(
@@ -213,14 +216,14 @@ $(function() {
 		}, allList);
 
 		//絞り込んだ結果を出力
-		refleshHtml(result);		
+		refleshHtml(result);
 	}
 
 	/*================================================================
 	絞り込み[1] セレクトボックス絞り込み関数
 	================================================================
 	function filterByLife(list, value) {
-		
+
 		//絞り込み指定がない場合はリターン
 		if (value == "") {
 			return list;
@@ -245,7 +248,7 @@ $(function() {
 	絞り込み[2] チェックボックス絞り込み関数
 	================================================================*/
 	function filterByTag(list, value) {
-		
+
 		//絞り込み指定がない場合はリターン
 		if (value.length == 0) {
 			return list;
@@ -253,18 +256,18 @@ $(function() {
 
 		//選択した属性（チェックボックス）とtagがマッチするかでフィルタリング
 		return _.filter(list, function(item) {
-			
+
 			var isMatch = false;
 
 			//配列同士の比較
 			_.each(value, function(chkItem, i) {
-				
+
 				_.each(item.tag, function(tagItem, i) {
 					if (tagItem === $(chkItem).val()) {
 						isMatch = true;
 					}
 				});
-				
+
 			});
 
 			return isMatch;
@@ -302,7 +305,7 @@ $(function() {
 		});
 
 	}
-	
+
 // 「.modal-open」をクリック
     $('.modal-ope').click(function(){
     	//DebugPrint("ほげほげ");
@@ -349,8 +352,8 @@ $(function() {
         }
 
     });
-    
-    
+
+
     /*================================================================
 	デバック
 	================================================================*/
