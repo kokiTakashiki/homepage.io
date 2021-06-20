@@ -1,50 +1,72 @@
 .main {
 	width: 100%;
-	//border: 1px solid #000;
-	//font-size: 200%;
+	/*border: 1px solid #000;*/
+	/*font-size: 200%;*/
 	text-align: center;
+	font-family: 'PT Sans', sans-serif;
 }
 .main div	{
 	width: 450;
-	//border: 1px solid #FF0000;
+	/*border: 1px solid #FF0000;*/
 	margin: 0 auto;
 	text-align: left;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .title {
 	width: 100%;
-	//border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	text-align: center;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .title div	{
 	width: 450;
-	//border: 1px solid #FF0000;
+	/*border: 1px solid #FF0000;*/
 	margin: 0 auto;
 	text-align: left;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .titleBer {
 	width: 100%;
-	//border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	text-align: center;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .titleBer div	{
 	width: 500;
-	//border: 1px solid #FF0000;
+	/*border: 1px solid #FF0000;*/
 	margin: 0 auto;
 	text-align: center;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .chgEng {
 	width: 100%;
-	//border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	text-align: center;
+	font-family: 'PT Sans', sans-serif;
 }
 .chgEng div	{
 	width: 450;
-	//border: 1px solid #FF0000;
+	/*border: 1px solid #FF0000;*/
 	margin: 0 auto;
 	text-align: right;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.chgJP {
+	width: 100%;
+	/*border: 1px solid #000;*/
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+}
+.chgJP div	{
+	width: 450;
+	/*border: 1px solid #FF0000;*/
+	margin: 0 auto;
+	text-align: right;
+	font-family: 'PT Sans', sans-serif;
 }

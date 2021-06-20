@@ -5,70 +5,51 @@ $(function() {
 	================================================================*/
 	var allList = [
 		{
-			id: "id002",
-			life: 2019,
-			title: "omokake",
-			//tag: ["鳥類","かっこいい","こわい","うごかない"],
+			id: "kokeVR",
+			life: "2021",
+			title: "苔玉のあるわーるど",
+			descriptionURL: "https://vrch.at/wrld_61307e84-0888-4b9f-9b9e-19ee6987f380",
 			description:
-			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。",
-			modalid: "mcon2"
+			"VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。"
+		},
+		{
+			id: "kokeGL",
+			life: "2020",
+			title: "kokeGL",
+			descriptionURL: "https://kokitakashiki.github.io/kokegl.io/",
+			description:
+			"いろいろな種類のコケをwebglを用いて表現してみます。"
+		},
+		{
+			id: "webTitel",
+			life: "2019",
+			title: "omokake",
+			descriptionURL: "omokake.html",
+			description:
+			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。(制作中止)"
+		},
+		{
+			id: "mofuAR",
+			life: "2018-2019",
+			title: "mofuAR",
+			descriptionURL: "https://youtu.be/MoHXsJgTLhs",
+			description:
+			"Virtual moss placed in AR space, a system that causes animation to evoke the sensation of its touch.<br>We produced a demo. It's called Mofu AR.<br>The concept is simulated experience to touch moss."
+		},
+		{
+			id: "newPortfolio01_19",
+			life: "2017",
+			title: "fluffy",
+			descriptionURL: "https://youtu.be/mXRpmFW3IDQ",
+			description: ""
 		},
 		{
 			id: "newPortfolio01_06",
-			life: 2015,
+			life: "2015",
 			title: "fluffy",
-			//tag: ["哺乳類","かわいい","かっこいい"],
-			description: "test",
-			modalid: "mcon1"
+			descriptionURL: "http://kokitakeda.sakura.ne.jp/dokuwiki/doku.php/imamade/07",
+			description: ""
 		},
-		// {
-		// 	id: "id003",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["魚類","ほのぼの"],
-		// 	description: "test",
-		// 	modalid: "mcon3"
-		// },
-		// {
-		// 	id: "id004",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["鳥類","かっこいい","こわい"],
-		// 	description: "test",
-		// 	modalid: "mcon4"
-		// },
-		// {
-		// 	id: "id005",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["昆虫類","かっこいい","こわい"],
-		// 	description: "test",
-		// 	modalid: "mcon5"
-		// },
-		// {
-		// 	id: "id006",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["哺乳類","だれなん？"],
-		// 	description: "test",
-		// 	modalid: "mcon6"
-		// },
-		// {
-		// 	id: "id007",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["哺乳類","かわいい","ほのぼの"],
-		// 	description: "test",
-		// 	modalid: "mcon7"
-		// },
-		// {
-		// 	id: "id008",
-		// 	life: 000,
-		// 	title: "test",
-		// 	//tag: ["鳥類","こわい"],
-		// 	description: "test",
-		// 	modalid: "mcon8"
-		// }
 	];
 
 	/*================================================================
@@ -99,27 +80,27 @@ $(function() {
 				outputHtml += '<div class="product">';
 				outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
 				//画像
-				outputHtml += '	<div class="photo"><img src="img/' + line.id + '.jpg" alt="' + line.title + '" /></div>';
+				outputHtml += '	<div class="photo"><a href="' + line.descriptionURL + '"><img src="../img/' + line.id + '.jpg" alt="' + line.title + '" /></a></div>';
 				//ボタン画像
-                //outputHtml += ' <a href="index.html"><img src="img/' + line.id + '.jpg" alt="' + line.title + '" /></a>';
-                //outputHtml += ' </div> ';
+                // outputHtml += ' <a href="index.html"><img src="img/' + line.id + '.jpg" alt="' + line.title + '" /></a>';
+                // outputHtml += ' </div> ';
                 //モーダル画像
-                /*outputHtml += ' <a data-target=" ' + line.modalid + ' " class="modal-open">クリックするとモーダルウィンドウを開きます。</a> ';
-                outputHtml += ' <div id=" ' + line.modalid + ' " class="modal-content"> ';
-                outputHtml += ' 	<p>リンク1の内容です。</p> ';
-                outputHtml += ' 	<p><a class="modal-close">閉じる</a></p> ';
-                outputHtml += ' </div> ';*/
+                // outputHtml += ' <a data-target=" ' + line.modalid + ' " class="modal-open">クリックするとモーダルウィンドウを開きます。</a> ';
+                // outputHtml += ' <div id=" ' + line.modalid + ' " class="modal-content"> ';
+                // outputHtml += ' 	<p>リンク1の内容です。</p> ';
+                // outputHtml += ' 	<p><a class="modal-close">閉じる</a></p> ';
+                // outputHtml += ' </div> ';
 
 				outputHtml += '	<div class="info">';
-				//outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
-				//outputHtml += '		<p class="description">制作年:&nbsp;' + line.life + '</p>';
-				/*outputHtml += '		<ul class="tag">';
-				_.each(line.tag, function(tag, i){
-				outputHtml += '			<li>' + tag + '</li>';
-				});
-				outputHtml += '		</ul>';		*/
+				// outputHtml += '		<h3 class="productTitle">' + line.title + '</h3>';
+				// outputHtml += '		<p class="description">制作年:&nbsp;' + line.life + '</p>';
+				// outputHtml += '		<ul class="tag">';
+				// _.each(line.tag, function(tag, i){
+				// outputHtml += '			<li>' + tag + '</li>';
+				// });
+				outputHtml += '		</ul>';		
 				outputHtml += '		<p class="description">' + line.description + '</p>';
-				outputHtml += '		<p class="description">制作年:&nbsp;' + line.life + '</p>';
+				outputHtml += '		<p class="description">制作年:' + line.life + '</p>';
 				outputHtml += '	</div>';
 				outputHtml += '<!--/.product--></div>';
 			});
