@@ -24,7 +24,7 @@ $(function() {
 			id: "webTitel",
 			life: "2019",
 			title: "omokake",
-			descriptionURL: "omokake.html",
+			descriptionURL: "../omokake.html",
 			description:
 			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。(制作中止)"
 		},
