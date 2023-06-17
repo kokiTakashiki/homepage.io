@@ -7,26 +7,26 @@ $(function() {
 		{
 			id: "kokeVR",
 			life: "2021",
-			title: "苔玉のあるわーるど",
+			title: "苔玉のあるわーるど<br>Moss Balls in the World",
 			descriptionURL: "https://vrch.at/wrld_61307e84-0888-4b9f-9b9e-19ee6987f380",
 			description:
-			"VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。"
+			"VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。<br><br>A world for VRChat, where up to 16 people can be online."
 		},
 		{
 			id: "kokeGL",
-			life: "2020",
+			life: "2020.7.24-2020.11.17",
 			title: "kokeGL",
 			descriptionURL: "https://kokitakashiki.github.io/kokegl.io/",
 			description:
-			"いろいろな種類のコケをwebglを用いて表現してみます。"
+			"いろいろな種類のコケをwebglを用いて表現してみます。<br><br>Let's try to represent various types of mosses using webgl."
 		},
 		{
 			id: "webTitel",
-			life: "2019",
+			life: "2019, released in 2021.8.17",
 			title: "omokake",
-			descriptionURL: "../omokake.html",
+			descriptionURL: "https://apps.apple.com/jp/app/omokake/id1484496250",
 			description:
-			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。(制作中止)"
+			"おもかけは<br>思い出に触れることをコンセプトにしたアプリです。<br><br>Omokake is<br>This application is based on the concept of touching memories.<br><br>Introduction page: <a href='../omokake.html'>omokake</a>"
 		},
 		{
 			id: "mofuAR",
@@ -100,7 +100,7 @@ $(function() {
 				// });
 				outputHtml += '		</ul>';		
 				outputHtml += '		<p class="description">' + line.description + '</p>';
-				outputHtml += '		<p class="description">制作年:' + line.life + '</p>';
+				outputHtml += '		<p class="description">Production : ' + line.life + '</p>';
 				outputHtml += '	</div>';
 				outputHtml += '<!--/.product--></div>';
 			});
