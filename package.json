@@ -4,9 +4,12 @@
   "description": "Personal homepage",
   "private": true,
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "validate": "html-validate \"*.html\" \"mainContent/*.html\"",
+    "validate:all": "html-validate --max-warnings=-1 \"*.html\" \"mainContent/*.html\""
   },
   "devDependencies": {
+    "html-validate": "^9.5.3",
     "prettier": "^3.8.1"
   }
 }
