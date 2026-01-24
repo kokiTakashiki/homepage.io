@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build files
+Build/
+TemplateData/
+
+# Vendor libraries
+js/jquery-3.7.0.js
+js/underscore.js
+
+# Images and binary files
+*.jpg
+*.png
+*.gif
+*.ico
+*.unityweb
+
+# Other
+readme.txt
