@@ -1,0 +1,12 @@
+{
+  "name": "homepage.io",
+  "version": "1.0.0",
+  "description": "Personal homepage",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
