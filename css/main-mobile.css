@@ -1,3 +1,9 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .main {
   width: 100%;
   /*border: 1px solid #000;*/
@@ -6,7 +12,7 @@
   font-family: 'PT Sans', sans-serif;
 }
 .main div {
-  width: 395;
+  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: left;
@@ -22,7 +28,7 @@
 }
 
 .title div {
-  width: 350;
+  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: left;
@@ -38,7 +44,7 @@
 }
 
 .titleBer div {
-  width: 350;
+  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: center;
@@ -53,7 +59,7 @@
   font-family: 'PT Sans', sans-serif;
 }
 .chgEng div {
-  width: 400;
+  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
@@ -67,9 +73,42 @@
   font-family: 'PT Sans', sans-serif;
 }
 .chgJP div {
-  width: 450;
+  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
   font-family: 'PT Sans', sans-serif;
+}
+
+/* 共通ユーティリティクラス */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.hr-narrow {
+  width: 400px;
+  margin: 0 auto;
+}
+.content-padding {
+  padding: 0px;
+}
+.rounded-image {
+  border-radius: 33px;
+}
+
+/* omokakeページ用ダークテーマ */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* game.html用インラインスタイル代替 */
+.game-container {
+  width: 960px;
+  height: 600px;
 }
