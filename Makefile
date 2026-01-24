@@ -27,8 +27,10 @@ format:
 validate:
 	@echo "HTMLを検証しています (エラーのみ)..."
 	npm run validate
+	@echo "検証成功しました！"
 
 # HTML検証 (警告含む全て)
 validate-all:
 	@echo "HTMLを検証しています (警告含む全て)..."
 	npm run validate:all
+	@echo "検証成功しました！"
