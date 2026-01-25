@@ -1,7 +1,7 @@
 $(function () {
   var allList = [
     {
-      id: 'kokeVR',
+      imageFileName: 'kokeVR',
       life: '2021',
       title: '苔玉のあるわーるど<br>Moss Balls in the World',
       descriptionURL: 'https://vrch.at/wrld_61307e84-0888-4b9f-9b9e-19ee6987f380',
@@ -9,7 +9,7 @@ $(function () {
         'VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。<br><br>A world for VRChat, where up to 16 people can be online.',
     },
     {
-      id: 'kokeGL',
+      imageFileName: 'kokeGL',
       life: '2020.7.24-2020.11.17',
       title: 'kokeGL',
       descriptionURL: 'https://kokitakashiki.github.io/kokegl.io/',
@@ -17,7 +17,7 @@ $(function () {
         "いろいろな種類のコケをwebglを用いて表現してみます。<br><br>Let's try to represent various types of mosses using webgl.",
     },
     {
-      id: 'webTitel',
+      imageFileName: 'omokakeLogo',
       life: '2019, released in 2021.8.17',
       title: 'omokake',
       descriptionURL: 'https://apps.apple.com/jp/app/omokake/id1484496250',
@@ -25,7 +25,7 @@ $(function () {
         "おもかけは<br>思い出に触れることをコンセプトにしたアプリです。<br><br>Omokake is<br>This application is based on the concept of touching memories.<br><br>Introduction page: <a href='../omokake.html'>omokake</a>",
     },
     {
-      id: 'mofuAR',
+      imageFileName: 'mofuAR',
       life: '2018-2019',
       title: 'mofuAR',
       descriptionURL: 'https://youtu.be/MoHXsJgTLhs',
@@ -33,14 +33,14 @@ $(function () {
         "Virtual moss placed in AR space, a system that causes animation to evoke the sensation of its touch.<br>We produced a demo. It's called Mofu AR.<br>The concept is simulated experience to touch moss.",
     },
     {
-      id: 'newPortfolio01_19',
+      imageFileName: 'newPortfolio01_19',
       life: '2017',
-      title: 'fluffy',
+      title: 'floating sight',
       descriptionURL: 'https://youtu.be/mXRpmFW3IDQ',
       description: '',
     },
     {
-      id: 'newPortfolio01_06',
+      imageFileName: 'newPortfolio01_06',
       life: '2015',
       title: 'fluffy',
       descriptionURL: 'http://kokitakeda.sakura.ne.jp/dokuwiki/doku.php/imamade/07',
@@ -63,7 +63,7 @@ $(function () {
           '  <div class="photo"><a href="' +
           line.descriptionURL +
           '"><img src="../img/' +
-          line.id +
+          line.imageFileName +
           '.jpg" alt="' +
           line.title +
           '" /></a></div>';
