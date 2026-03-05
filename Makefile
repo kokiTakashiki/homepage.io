@@ -1,4 +1,4 @@
-.PHONY: setup format validate validate-all markDownToHTML help
+.PHONY: setup update format validate validate-all markDownToHTML help
 
 # Markdown変換のデフォルト設定
 SRC ?= mainContent/HomePageAbout.md
@@ -8,6 +8,7 @@ DEST ?= mainContent/HomePageAbout.html
 help:
 	@echo "利用可能なコマンド:"
 	@echo "  make setup        - 開発ツールをインストール (Prettier, Nu Html Checker)"
+	@echo "  make update       - 依存パッケージを全てアップデート"
 	@echo "  make format       - プロジェクト全体をフォーマット"
 	@echo "  make validate     - HTMLをエラーのみチェック"
 	@echo "  make validate-all - HTMLを警告含めて全てチェック"
@@ -21,6 +22,12 @@ setup:
 	@echo "セットアップ完了！"
 	@echo "  - Prettier (コードフォーマッター)"
 	@echo "  - html-validate (HTML検証ツール)"
+
+# 依存パッケージのアップデート
+update:
+	@echo "依存パッケージをアップデートしています..."
+	npm update
+	@echo "アップデート完了！"
 
 # プロジェクトのフォーマット
 format:
