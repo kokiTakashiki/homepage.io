@@ -2,6 +2,25 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 60px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+code {
+  display: inline;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.95em;
 }
 
 .main {
@@ -153,10 +172,9 @@ body {
 }
 
 .job-title {
-  color: #666;
-  font-size: 1em;
+  line-height: 1.6;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .biography {
