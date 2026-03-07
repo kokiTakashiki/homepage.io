@@ -255,3 +255,53 @@ code {
 .content-wide {
   width: 100% !important;
 }
+
+/* Work detail page styles */
+.work-detail {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.work-title {
+  font-size: 14pt;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.work-image img {
+  width: 100%;
+  height: auto;
+}
+
+.work-caption {
+  text-align: center;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.work-body {
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.work-production {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-links {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.work-links a {
+  display: block;
+  margin-bottom: 10px;
+}
