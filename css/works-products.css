@@ -78,6 +78,13 @@ body {
   line-height: 1.4;
   font-size: 14px;
 }
+.productArea .product .description a {
+  color: #333;
+  text-decoration: none;
+}
+.productArea .product .description a:hover {
+  text-decoration: underline;
+}
 .worksToc-inner {
   line-height: 1.4;
   font-size: 12px;
