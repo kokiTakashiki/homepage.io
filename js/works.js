@@ -135,15 +135,20 @@ $(function () {
             '.jpg" alt="' +
             line.title +
             '" /></a></div>';
+          outputHtml += '  <div class="info">';
+          outputHtml += '    <ul></ul>';
+          outputHtml += '    <p class="description">' + line.description + '</p></div>';
+          outputHtml += '    <p class="description">Production : ' + line.life + '</p>';
+        } else {
+          outputHtml += '  <div class="info">';
+          outputHtml += '    <ul></ul>';
+          outputHtml +=
+            '    <p class="description"><a href="' +
+            line.descriptionURL +
+            '">' +
+            line.description +
+            '</a></div>';
         }
-        outputHtml += '  <div class="info">';
-        outputHtml += '    <ul></ul>';
-        outputHtml +=
-          '    <p class="description"><a href="' +
-          line.descriptionURL +
-          '">' +
-          line.description +
-          '</a></div>';
         outputHtml += '  </div>';
         outputHtml += '<!--/.product--></div>';
       });
