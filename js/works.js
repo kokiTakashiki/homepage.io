@@ -113,10 +113,18 @@ $(function () {
 
   function makeHTML(list) {
     var outputHtml = '';
+    var tocHtml = '';
 
     if (list.length > 0) {
+      tocHtml += '<nav class="worksToc-inner"><h3 class="text-left">目次</h3><ul>';
       _.each(list, function (line, i) {
-        outputHtml += '<div class="product">';
+        tocHtml += '<li><a href="#product-' + i + '">' + line.title + '</a></li>';
+      });
+      tocHtml += '</ul></nav>';
+      $('.worksToc').html(tocHtml);
+
+      _.each(list, function (line, i) {
+        outputHtml += '<div class="product" id="product-' + i + '">';
         outputHtml += '  <h3 class="productTitle">' + line.title + '</h3>';
         outputHtml +=
           '  <div class="photo"><a href="' +
@@ -134,6 +142,7 @@ $(function () {
         outputHtml += '<!--/.product--></div>';
       });
     } else {
+      $('.worksToc').empty();
       outputHtml +=
         '<div class="noproduct"><p>条件に当てはまるwordを検索できませんでした。</p></div>';
     }
