@@ -238,13 +238,13 @@ code {
   line-height: 1.5;
 }
 
-.project-card .project-link {
-  margin-top: 10px;
-  font-size: 0.9em;
+.project-card a {
+  color: #333;
+  text-decoration: none;
 }
 
-.project-card .project-link a {
-  color: #666;
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 /* Wide content area for cards */
