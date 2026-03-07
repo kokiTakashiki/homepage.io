@@ -2,40 +2,32 @@ $(function () {
   var allList = [
     {
       imageFileName: 'work_icon',
-      life: '2025-',
-      title: '名刺管理アプリEightのiOSアプリ開発チーム',
+      life: '2025.4-',
+      title: '2025年4月 名刺管理アプリEightのiOSアプリ開発チーム',
       descriptionURL: 'workDetail/job/2025-04-eight-ios.html',
       description: 'Sansan株式会社のEight事業部にてiOSアプリの作り直しプロジェクトに参加。',
     },
     {
       imageFileName: 'work_icon',
-      life: '2024',
-      title: 'SansanのiOSアプリ開発チーム',
+      life: '2024.1-',
+      title: '2024年1月 SansanのiOSアプリ開発チーム',
       descriptionURL: 'workDetail/job/2024-01-sansan-ios.html',
       description: 'Sansan株式会社に入社し、営業DX SansanのiOSアプリを開発するチームに参加。',
     },
     {
       imageFileName: 'work_icon',
-      life: '2023',
-      title: 'ライブ配信アプリ ミクチャのiOSアプリ開発チーム',
+      life: '2023.2-',
+      title: '2023年2月 ライブ配信アプリ ミクチャのiOSアプリ開発チーム',
       descriptionURL: 'workDetail/job/2023-02-mixch-ios.html',
       description:
         '株式会社DONUTSに入社し、ライブ配信サービスのミクチャのアプリを開発するチームに参加。',
     },
     {
       imageFileName: 'work_icon',
-      life: '2022',
-      title: '化粧品小売アプリ @cosmeのiOSアプリ開発チーム',
+      life: '2022.4-',
+      title: '2022年4月 化粧品小売アプリ @cosmeのiOSアプリ開発チーム',
       descriptionURL: 'workDetail/job/2022-04-cosme-ios.html',
       description: '出向で化粧品小売アプリの@cosmeを開発するチームに参加。',
-    },
-    {
-      imageFileName: 'work_icon',
-      life: '2021.7-2022.3',
-      title: 'セコム株式会社様のアプリの運用・保守チーム',
-      descriptionURL: 'workDetail/job/2021-07-secom.html',
-      description:
-        'ココセコムあんしんアプリ・Home Security App・SECURILOCK SMARTの3つのアプリの運用と保守を行うチームに参加。',
     },
     {
       imageFileName: 'chairFlight',
@@ -46,8 +38,16 @@ $(function () {
     },
     {
       imageFileName: 'work_icon',
-      life: '2021.3-2021.6',
-      title: '音楽健康指導士支援アプリのFREE DAMの開発チーム',
+      life: '2021.7-',
+      title: '2021年7月 セコム株式会社様のアプリの運用・保守チーム',
+      descriptionURL: 'workDetail/job/2021-07-secom.html',
+      description:
+        'ココセコムあんしんアプリ・Home Security App・SECURILOCK SMARTの3つのアプリの運用と保守を行うチームに参加。',
+    },
+    {
+      imageFileName: 'work_icon',
+      life: '2021.3-',
+      title: '2021年3月 音楽健康指導士支援アプリのFREE DAMの開発チーム',
       descriptionURL: 'workDetail/job/2021-03-freedam.html',
       description: 'モバイルアプリを委託されて開発するチームに参加。',
     },
@@ -60,17 +60,9 @@ $(function () {
         'VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。<br><br>A world for VRChat, where up to 16 people can be online.',
     },
     {
-      imageFileName: 'omokakeLogo',
-      life: '2019, released in 2021.8.17',
-      title: 'omokake',
-      descriptionURL: 'workDetail/personal/omokake.html',
-      description:
-        "おもかけは<br>思い出に触れることをコンセプトにしたアプリです。<br><br>Omokake is<br>This application is based on the concept of touching memories.<br><br>Introduction page: <a href='../omokake.html'>omokake</a>",
-    },
-    {
       imageFileName: 'work_icon',
-      life: '2020.1-2021.2',
-      title: 'ThingsBoard 製造業向けデータ可視化Webアプリ開発チーム',
+      life: '2020.1-',
+      title: '2020年1月 ThingsBoard 製造業向けデータ可視化Webアプリ開発チーム',
       descriptionURL: 'workDetail/job/2020-01-thingsboard.html',
       description:
         '製造業向けのデータ可視化Webアプリを、お客様の要望に合わせて開発するチームに参加。',
@@ -82,6 +74,14 @@ $(function () {
       descriptionURL: 'workDetail/personal/kokegl.html',
       description:
         "いろいろな種類のコケをwebglを用いて表現してみます。<br><br>Let's try to represent various types of mosses using webgl.",
+    },
+    {
+      imageFileName: 'omokakeLogo',
+      life: '2019, released in 2021.8.17',
+      title: 'omokake',
+      descriptionURL: 'workDetail/personal/omokake.html',
+      description:
+        "おもかけは<br>思い出に触れることをコンセプトにしたアプリです。<br><br>Omokake is<br>This application is based on the concept of touching memories.<br><br>Introduction page: <a href='../omokake.html'>omokake</a>",
     },
     {
       imageFileName: 'mofuAR',
@@ -127,7 +127,7 @@ $(function () {
         outputHtml += '<div class="product" id="product-' + i + '">';
         outputHtml += '  <h3 class="productTitle">' + line.title + '</h3>';
         outputHtml +=
-          '  <div class="photo"><a href="' +
+          '  <div class="work-image"><a href="' +
           line.descriptionURL +
           '"><img src="../img/' +
           line.imageFileName +
@@ -136,8 +136,7 @@ $(function () {
           '" /></a></div>';
         outputHtml += '  <div class="info">';
         outputHtml += '    <ul></ul>';
-        outputHtml += '    <p class="description">' + line.description + '</p>';
-        outputHtml += '    <p class="description">Production : ' + line.life + '</p>';
+        outputHtml += '    <p class="description">' + line.description + '</p><br />';
         outputHtml += '  </div>';
         outputHtml += '<!--/.product--></div>';
       });

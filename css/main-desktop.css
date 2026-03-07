@@ -171,25 +171,21 @@ code {
   margin-bottom: 8px;
 }
 
+.profile-content a {
+  color: #333;
+  text-decoration: none;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.profile-content a:hover {
+  text-decoration: underline;
+}
+
 .job-title {
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 15px;
-}
-
-.biography {
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.expertise-list {
-  line-height: 1.5;
-  margin: 0;
-  padding-left: 20px;
-}
-
-.expertise-list li {
-  margin-bottom: 2px;
 }
 
 .follow-list {
@@ -266,7 +262,8 @@ code {
 .work-detail {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .work-title {

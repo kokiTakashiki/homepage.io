@@ -2,8 +2,6 @@
 style
 -----------------------------------*/
 body {
-  //background: #2d2d2d;
-  //color: #fff;
   font-family: 'Hiragino Kaku Gothic Pro', 'MS PGothic', sans-serif;
 }
 .filterArea {
@@ -35,28 +33,16 @@ body {
 }
 
 .productArea {
-  //-js-display: flex;
-  //display: -webkit-box;
-  //display: -webkit-flex;
   display: -ms-flexbox;
-  //display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 10px;
 }
 .productCntArea p {
   text-align: right;
   padding-right: 20px;
   font-size: 14px;
   color: #a4a4a4;
-}
-.productArea .product {
-  //width: calc(33.333% - 20px);
-  //margin: 10px 10px 20px 10px;
-}
-.productArea .product .photo {
-  //margin-bottom: 10px;
 }
 .productArea .product img {
   width: 100%;
@@ -99,4 +85,11 @@ body {
 .worksToc-inner h3 {
   line-height: 1.4;
   font-size: 18px;
+}
+.worksToc-inner li a {
+  color: #333;
+  text-decoration: none;
+}
+.worksToc-inner li a:hover {
+  text-decoration: underline;
 }

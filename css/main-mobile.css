@@ -21,7 +21,6 @@ code {
   font-family: 'PT Sans', sans-serif;
 }
 .main div {
-  width: 400px;
   /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: left;
@@ -169,21 +168,21 @@ code {
   margin-bottom: 10px;
 }
 
+.profile-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-content a:hover {
+  text-decoration: underline;
+}
+
 .job-title {
   color: #666;
   font-size: 1.1em;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.biography {
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.expertise-list {
-  line-height: 1.8;
 }
 
 .follow-list {
@@ -260,7 +259,8 @@ code {
 .work-detail {
   max-width: 100%;
   margin: 0 auto;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .work-title {
