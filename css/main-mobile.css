@@ -4,6 +4,15 @@ body {
   padding: 16px 16px;
 }
 
+code {
+  display: inline;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.95em;
+}
+
 .main {
   width: 100%;
   /*border: 1px solid #000;*/
