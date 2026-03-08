@@ -84,9 +84,9 @@ style
 }
 .worksToc-inner {
   line-height: 1.4;
-  font-size: 12px;
+  font-size: 14px;
 }
-.worksToc-inner h3 {
+.worksToc-inner h1 {
   line-height: 1.4;
   font-size: 18px;
 }
