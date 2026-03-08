@@ -15,28 +15,23 @@ code {
 
 .main {
   width: 100%;
-  /*border: 1px solid #000;*/
   font-size: 120%;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .main div {
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
-  text-align: left;
   font-family: 'PT Sans', sans-serif;
 }
 
 .title {
   width: 100%;
   font-size: 200%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 
 .title div {
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: left;
   font-family: 'PT Sans', sans-serif;
@@ -45,13 +40,11 @@ code {
 .titleBer {
   width: 100%;
   font-size: 160%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 
 .titleBer div {
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
@@ -59,13 +52,11 @@ code {
 
 .chgEng {
   width: 100%;
-  /*border: 1px solid #000;*/
   font-size: 170%;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .chgEng div {
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
   font-family: 'PT Sans', sans-serif;
@@ -73,12 +64,10 @@ code {
 
 .chgJP {
   width: 100%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .chgJP div {
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
   font-family: 'PT Sans', sans-serif;
@@ -277,7 +266,7 @@ code {
 }
 
 .work-caption {
-  text-align: center;
+  text-align: left;
   color: #666;
   margin-bottom: 8px;
 }
@@ -300,7 +289,7 @@ code {
 }
 
 .work-links {
-  text-align: center;
+  text-align: left;
   margin-bottom: 16px;
 }
 

@@ -42,7 +42,8 @@ style
   color: #a4a4a4;
 }
 .productArea .product img {
-  width: 100%;
+  width: 70%;
+  text-align: center;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -50,6 +51,7 @@ style
 .productArea .product .productTitle {
   line-height: 1.4;
   font-size: 18px;
+  text-align: left;
 }
 .productArea .product .productLife {
   line-height: 1.4;
@@ -74,6 +76,7 @@ style
 .productArea .product .description {
   line-height: 1.4;
   font-size: 14px;
+  text-align: left;
 }
 .productArea .product .description a {
   color: #333;
@@ -89,6 +92,9 @@ style
 .worksToc-inner h1 {
   line-height: 1.4;
   font-size: 18px;
+}
+.worksToc-inner ul {
+  text-align: left;
 }
 .worksToc-inner li a {
   color: #333;

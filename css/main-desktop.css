@@ -32,7 +32,6 @@ code {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -283,7 +282,7 @@ code {
 }
 
 .work-caption {
-  text-align: center;
+  text-align: left;
   color: #666;
   margin-bottom: 8px;
 }
@@ -306,7 +305,7 @@ code {
 }
 
 .work-links {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
