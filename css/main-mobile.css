@@ -282,6 +282,12 @@ code {
   margin-bottom: 8px;
 }
 
+.work-body h1 {
+  font-size: 14pt;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
 .work-body {
   text-align: left;
   line-height: 1.8;

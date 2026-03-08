@@ -288,6 +288,12 @@ code {
   margin-bottom: 8px;
 }
 
+.work-body h1 {
+  font-size: 16pt;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 .work-body {
   text-align: left;
   line-height: 1.8;
