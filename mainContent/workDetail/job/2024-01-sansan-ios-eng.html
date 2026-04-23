@@ -39,22 +39,83 @@
         <div class="work-body">
           <h1>Overview</h1>
           <p>
-            Joined Sansan, Inc. and the team developing the Sansan sales DX iOS app. Through this
-            team's development, learned two things:
-            <code>developing apps with many features</code> and
-            <code>setting up a dev environment for iOS 15</code>. Learned the necessity of
-            separating responsibilities in feature-rich apps. For iOS 15 dev environment setup, made
-            the project buildable in Xcode 13.
+            Joined Sansan, Inc. and became part of the team developing the Sansan sales DX iOS app.
+            Through development on this team, learned
+            <code>team development practices for feature-rich apps</code>. Learned the necessity of
+            separating responsibilities in apps with many features.
           </p>
           <h1>Description</h1>
           <p>
-            From January 2024 to December 2024, joined Sansan, Inc. and the team developing the
-            Sansan sales DX iOS app. This team performed two activities:
-            <code>development of the Sansan sales DX iOS app</code> and
-            <code>operations and maintenance of the Sansan sales DX iOS app</code>.
+            From January 2024 to December 2024, joined Sansan, Inc. and became part of the team
+            developing the Sansan sales DX iOS app. Primarily took responsibility for
+            <code>leading OS support and platform renewal for the iOS app</code> and
+            <code>standardizing technical decision-making through ADRs</code>.
           </p>
-          <h1>Key Words</h1>
-          <p>Swift, UIKit, XIB, Storyboard, OpenGLES, Metal, MVP, Legacy Code Refactoring</p>
+          <p>
+            For <code>leading OS support and platform renewal for the iOS app</code>, drove the
+            entire iOS 18 / iPadOS 18 / Xcode 16 support effort, from workload estimation and task
+            creation to test preparation and post-release crash investigation. Among these, two
+            cases are worth highlighting from a decision-making perspective.
+          </p>
+          <p>
+            The first is the
+            <code>deliberate decision not to adopt the floating tab bar</code> made in the context
+            of OS support. Regarding the floating tab bar (a new tab bar UI that appears floating on
+            the screen), newly recommended by Apple as a UI pattern in iPadOS 18, the investigation
+            led to the decision to maintain the conventional tab bar, prioritizing consistency with
+            the existing UI design. Rather than following Apple's newly recommended OS feature, this
+            was a technical decision that prioritized product-wide UX consistency. Owned the process
+            end-to-end, from investigation to implementation completion.
+          </p>
+          <p>
+            The second is the
+            <code>refactoring to separate tab bar management responsibility</code>, led in the
+            context of platform renewal. Led a design that separated tab bar management
+            responsibility from the View Controller to a Router, as a refactoring affecting more
+            than 30 screens. In a challenging area where tab state can be updated from multiple
+            paths—initial display at app launch, user tab operations, and deep links from
+            outside—chose separation after organizing the trade-off between "testability and future
+            extensibility vs. stability of the existing structure." As a result, unit testing of
+            screen transition logic became possible, and deep link handling became more transparent.
+            Drove the effort end-to-end, from design to review response.
+          </p>
+          <p>
+            For <code>standardizing technical decision-making through ADRs</code>, documented
+            development and operational rules accompanying the iOS / Android monorepo consolidation
+            as ADRs (Architecture Decision Records). The target audience was approximately 15
+            engineers across three teams: iOS, Android, and QA. The emphasis was on documenting not
+            only the conclusion but also the decision criteria and alternatives as a set, so that
+            the background of each decision would be preserved for members joining later.
+          </p>
+          <p>
+            The main topics were the following three. For
+            <code>selecting the CI trigger method</code>, compared a mechanism that triggers the
+            pipeline via commands from Slack (Slack Bolt: a bot framework running on Slack) against
+            the GitHub Actions UI, and adopted Slack Bolt with the deciding factor being the ability
+            to integrate communication and CI in the same place. For
+            <code>monorepo branch operation rules</code>, based on the GitLab Flow operated on the
+            iOS side, formulated an operational policy that also addressed existing issues on the
+            Android side. For
+            <code>rules for incorporating other branches during parallel projects</code>, developed
+            guidelines that balance development speed and quality, anticipating the three-team
+            structure.
+          </p>
+          <p>
+            In parallel with the two lead roles above, also engaged in ongoing cross-team
+            initiatives. For <code>incident response and QA collaboration</code>, served as the
+            primary release owner during incidents, and proposed a risk-severity evaluation process
+            for bug reports to the QA team, which helped accelerate prioritization decisions. For
+            <code>development environment improvements</code>, led the comparative evaluation,
+            stakeholder interviews, and budget request for three UI debugging tools, seeing the
+            introduction through to completion. For <code>technical outreach</code>, worked on
+            planning and operating joint study sessions co-hosted with five other companies, and
+            contributed to the technical blog.
+          </p>
+          <h1>key words</h1>
+          <p>
+            Swift, UIKit, SwiftUI, Kotlin, Objective-C, KMP, ktor, koin, Swift-DocC, SwiftPM,
+            CocoaPods, Carthage, GitHub Actions, CircleCI
+          </p>
         </div>
       </div>
     </div>
