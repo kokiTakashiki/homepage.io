@@ -4,7 +4,7 @@
   "description": "Personal homepage",
   "private": true,
   "scripts": {
-    "format": "prettier --write . && sed -i '' 's/<!doctype html>/<!DOCTYPE html>/g' *.html mainContent/*.html",
+    "format": "prettier --write . ; find . -name '*.html' -exec sed -i '' 's/<!doctype html>/<!DOCTYPE html>/g' {} +",
     "validate": "html-validate \"*.html\" \"mainContent/*.html\"",
     "validate:all": "html-validate --max-warnings=-1 \"*.html\" \"mainContent/*.html\""
   },

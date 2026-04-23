@@ -1,18 +1,76 @@
 $(function () {
   var allList = [
     {
+      imageFileName: '',
+      life: '2025.4-',
+      title: '2025年4月 名刺管理アプリEightのiOSアプリ開発チーム',
+      descriptionURL: 'workDetail/job/2025-04-eight-ios.html',
+      description: 'Sansan株式会社のEight事業部にてiOSアプリの作り直しプロジェクトに参加。',
+    },
+    {
+      imageFileName: '',
+      life: '2024.1-',
+      title: '2024年1月 SansanのiOSアプリ開発チーム',
+      descriptionURL: 'workDetail/job/2024-01-sansan-ios.html',
+      description: 'Sansan株式会社に入社し、営業DX SansanのiOSアプリを開発するチームに参加。',
+    },
+    {
+      imageFileName: '',
+      life: '2023.2-',
+      title: '2023年2月 ライブ配信アプリ ミクチャのiOSアプリ開発チーム',
+      descriptionURL: 'workDetail/job/2023-02-mixch-ios.html',
+      description:
+        '株式会社DONUTSに入社し、ライブ配信サービスのミクチャのアプリを開発するチームに参加。',
+    },
+    {
+      imageFileName: '',
+      life: '2022.4-',
+      title: '2022年4月 化粧品小売アプリ @cosmeのiOSアプリ開発チーム',
+      descriptionURL: 'workDetail/job/2022-04-cosme-ios.html',
+      description: '出向で化粧品小売アプリの@cosmeを開発するチームに参加。',
+    },
+    {
+      imageFileName: 'chairFlight',
+      life: '2022',
+      title: '椅子飛行部 部室 Chair Flight Room',
+      descriptionURL: 'workDetail/personal/chair-flight.html',
+      description: 'VRChat用ワールド。仮装空間SNSプラットフォームのVRChat上で公開。',
+    },
+    {
+      imageFileName: '',
+      life: '2021.7-',
+      title: '2021年7月 セキュリティ関連アプリの運用・保守チーム',
+      descriptionURL: 'workDetail/job/2021-07-security-apps.html',
+      description: '出向でセキュリティ関連の3本のモバイルアプリの運用と保守を行うチームに参加。',
+    },
+    {
+      imageFileName: '',
+      life: '2021.3-',
+      title: '2021年3月 モバイルアプリの受託開発チーム',
+      descriptionURL: 'workDetail/job/2021-03-contracted-mobile.html',
+      description: '出向でモバイルアプリを委託されて開発するチームに参加。',
+    },
+    {
       imageFileName: 'kokeVR',
       life: '2021',
-      title: '苔玉のあるわーるど<br>Moss Balls in the World',
-      descriptionURL: 'https://vrch.at/wrld_61307e84-0888-4b9f-9b9e-19ee6987f380',
+      title: '苔玉のあるわーるど Moss Balls in the World',
+      descriptionURL: 'workDetail/personal/moss-balls-world.html',
       description:
         'VRChat用ワールド。<br>16名までがオンラインで楽しむことができるワールドです。<br><br>A world for VRChat, where up to 16 people can be online.',
+    },
+    {
+      imageFileName: '',
+      life: '2020.1-',
+      title: '2020年1月 ThingsBoard 製造業向けデータ可視化Webアプリ開発チーム',
+      descriptionURL: 'workDetail/job/2020-01-thingsboard.html',
+      description:
+        '出向で製造業向けのデータ可視化Webアプリを、お客様の要望に合わせて開発するチームに参加。',
     },
     {
       imageFileName: 'kokeGL',
       life: '2020.7.24-2020.11.17',
       title: 'kokeGL',
-      descriptionURL: 'https://kokitakashiki.github.io/kokegl.io/',
+      descriptionURL: 'workDetail/personal/kokegl.html',
       description:
         "いろいろな種類のコケをwebglを用いて表現してみます。<br><br>Let's try to represent various types of mosses using webgl.",
     },
@@ -20,15 +78,22 @@ $(function () {
       imageFileName: 'omokakeLogo',
       life: '2019, released in 2021.8.17',
       title: 'omokake',
-      descriptionURL: 'https://apps.apple.com/jp/app/omokake/id1484496250',
+      descriptionURL: 'workDetail/personal/omokake.html',
       description:
         "おもかけは<br>思い出に触れることをコンセプトにしたアプリです。<br><br>Omokake is<br>This application is based on the concept of touching memories.<br><br>Introduction page: <a href='../omokake.html'>omokake</a>",
+    },
+    {
+      imageFileName: '',
+      life: '2019.4-',
+      title: '2019年4月 官公庁系のシステム基盤の構築プロジェクト',
+      descriptionURL: 'workDetail/job/2019-04-alh.html',
+      description: '出向で官公庁系のシステム基盤の構築プロジェクトに参加。',
     },
     {
       imageFileName: 'mofuAR',
       life: '2018-2019',
       title: 'mofuAR',
-      descriptionURL: 'https://youtu.be/MoHXsJgTLhs',
+      descriptionURL: 'workDetail/personal/mofuar.html',
       description:
         "Virtual moss placed in AR space, a system that causes animation to evoke the sensation of its touch.<br>We produced a demo. It's called Mofu AR.<br>The concept is simulated experience to touch moss.",
     },
@@ -36,14 +101,14 @@ $(function () {
       imageFileName: 'newPortfolio01_19',
       life: '2017',
       title: 'floating sight',
-      descriptionURL: 'https://youtu.be/mXRpmFW3IDQ',
+      descriptionURL: 'workDetail/personal/floating-sight.html',
       description: '',
     },
     {
       imageFileName: 'newPortfolio01_06',
       life: '2015',
       title: 'fluffy',
-      descriptionURL: 'http://kokitakeda.sakura.ne.jp/dokuwiki/doku.php/imamade/07',
+      descriptionURL: 'workDetail/personal/fluffy.html',
       description: '',
     },
   ];
@@ -54,29 +119,48 @@ $(function () {
 
   function makeHTML(list) {
     var outputHtml = '';
+    var tocHtml = '';
 
     if (list.length > 0) {
+      tocHtml += '<nav class="worksToc-inner"><h1 class="text-left">目次</h1><ul>';
       _.each(list, function (line, i) {
-        outputHtml += '<div class="product">';
-        outputHtml += '  <h3 class="productTitle">' + line.title + '</h3>';
-        outputHtml +=
-          '  <div class="photo"><a href="' +
-          line.descriptionURL +
-          '"><img src="../img/' +
-          line.imageFileName +
-          '.jpg" alt="' +
-          line.title +
-          '" /></a></div>';
-        outputHtml += '  <div class="info">';
-        outputHtml += '    <ul></ul>';
-        outputHtml += '    <p class="description">' + line.description + '</p>';
-        outputHtml += '    <p class="description">Production : ' + line.life + '</p>';
+        tocHtml += '<li><a href="#product-' + i + '">' + line.title + '</a></li>';
+      });
+      tocHtml += '</ul></nav>';
+      $('.worksToc').html(tocHtml);
+
+      _.each(list, function (line, i) {
+        outputHtml += '<div class="product" id="product-' + i + '">';
+        outputHtml += '  <h1 class="productTitle">' + line.title + '</h1>';
+        if (line.imageFileName.length > 0) {
+          outputHtml +=
+            '  <div class="work-image"><a href="' +
+            line.descriptionURL +
+            '"><img src="../img/' +
+            line.imageFileName +
+            '.jpg" alt="' +
+            line.title +
+            '" /></a></div>';
+          outputHtml += '  <div class="info">';
+          outputHtml += '    <ul></ul>';
+          outputHtml += '    <p class="description">' + line.description + '</p></div>';
+          outputHtml += '    <p class="description">Production : ' + line.life + '</p>';
+        } else {
+          outputHtml += '  <div class="info">';
+          outputHtml += '    <ul></ul>';
+          outputHtml +=
+            '    <p class="description"><a href="' +
+            line.descriptionURL +
+            '">' +
+            line.description +
+            '</a></div>';
+        }
         outputHtml += '  </div>';
         outputHtml += '<!--/.product--></div>';
       });
     } else {
-      outputHtml +=
-        '<div class="noproduct"><p>条件に当てはまるwordを検索できませんでした。</p></div>';
+      $('.worksToc').empty();
+      outputHtml += '表示できるデータがありません';
     }
 
     $('.productArea').html(outputHtml);

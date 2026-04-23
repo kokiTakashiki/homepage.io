@@ -4,32 +4,34 @@ body {
   padding: 16px 16px;
 }
 
+code {
+  display: inline;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.95em;
+}
+
 .main {
   width: 100%;
-  /*border: 1px solid #000;*/
-  font-size: 120%;
+  font-size: 100%;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .main div {
-  width: 400px;
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
-  text-align: left;
   font-family: 'PT Sans', sans-serif;
 }
 
 .title {
   width: 100%;
   font-size: 200%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 
 .title div {
-  width: 400px;
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: left;
   font-family: 'PT Sans', sans-serif;
@@ -38,14 +40,11 @@ body {
 .titleBer {
   width: 100%;
   font-size: 160%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 
 .titleBer div {
-  width: 400px;
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
@@ -53,14 +52,11 @@ body {
 
 .chgEng {
   width: 100%;
-  /*border: 1px solid #000;*/
   font-size: 170%;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .chgEng div {
-  width: 400px;
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
   font-family: 'PT Sans', sans-serif;
@@ -68,13 +64,10 @@ body {
 
 .chgJP {
   width: 100%;
-  /*border: 1px solid #000;*/
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
 .chgJP div {
-  width: 400px;
-  /*border: 1px solid #FF0000;*/
   margin: 0 auto;
   text-align: right;
   font-family: 'PT Sans', sans-serif;
@@ -91,7 +84,8 @@ body {
   text-align: right;
 }
 .hr-narrow {
-  width: 400px;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
 }
 .content-padding {
@@ -160,21 +154,21 @@ body {
   margin-bottom: 10px;
 }
 
+.profile-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-content a:hover {
+  text-decoration: underline;
+}
+
 .job-title {
   color: #666;
   font-size: 1.1em;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.biography {
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.expertise-list {
-  line-height: 1.8;
 }
 
 .follow-list {
@@ -233,16 +227,73 @@ body {
   line-height: 1.5;
 }
 
-.project-card .project-link {
-  margin-top: 10px;
-  font-size: 0.9em;
+.project-card a {
+  color: #333;
+  text-decoration: none;
 }
 
-.project-card .project-link a {
-  color: #666;
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 /* Wide content area for cards */
 .content-wide {
   width: 100% !important;
+}
+
+/* Work detail page styles */
+.work-detail {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.work-title {
+  font-size: 14pt;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.work-image img {
+  width: 100%;
+  height: auto;
+}
+
+.work-caption {
+  text-align: left;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.work-body h1 {
+  font-size: 14pt;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-body {
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.work-production {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-links {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.work-links a {
+  display: block;
+  margin-bottom: 10px;
 }
