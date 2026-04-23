@@ -39,28 +39,80 @@
         <div class="work-body">
           <h1>Overview</h1>
           <p>
-            In April, transferred to the Eight division. Eight is a business card management app
-            aimed at eliminating paper business cards. Joined the iOS app rebuild project. This
-            project aims to rewrite the complex, 13+ year-old codebase from scratch to accelerate
-            development. I joined in the middle of the project.
+            In April 2025, transferred to Sansan, Inc.'s Eight division and joined, mid-way through,
+            the rebuild project for the Eight business card app on iOS. The project aims to rebuild
+            a 13+ year-old, heavily complexified iOS codebase from scratch, under the principle of
+            <code>how to build features that are easy to discard</code>. Over this year, I sharpened
+            two capabilities: <code>driving development from design documents</code> and
+            <code>weaponizing AI and MCP to raise development productivity</code>.
           </p>
           <h1>Description</h1>
           <p>
-            Activities in this project are described in two parts:
-            <code>things learned throughout the year</code> and <code>features implemented</code>.
-            <br /><br />
-            The year's key learning was <code>how to build features that are easy to discard</code>.
-            This was the most valued principle in the rebuild project and had a significant impact
-            on me. To practice it, I deeply studied two books:
+            From April 2025 to April 2026, as a member of a team of 8+ iOS engineers in Sansan,
+            Inc.'s Eight division, worked on the rebuild project. Primarily took responsibility for
+            three areas:
+            <code>design-document-driven feature development</code>,
+            <code
+              >migrating to the new design (VIPER) and deciding on Swift Concurrency adoption</code
+            >, and <code>operating development with AI and MCP built in</code>.
+          </p>
+          <p>
+            For <code>design-document-driven feature development</code>, authored 10-20 design
+            documents for the onboarding, search, settings, and cross-cutting foundation areas, and
+            implemented features end-to-end along those documents. The distinguishing practice was
+            the discipline of writing the design document before writing code, and drawing module
+            boundaries at the unit of each design document. By splitting modules at the feature
+            level, I kept the architecture in a shape where each feature can be discarded in the
+            future, and by deciding responsibility boundaries before starting implementation, I left
+            no ambiguity. Documents captured not only conclusions but also the decision made and the
+            alternatives considered, so that members joining later could understand the background
+            of each decision. Furthermore, as a quality bar for the design document itself, I
+            evaluated each document against
+            <code>does a reader feel no friction reading it top to bottom?</code> and
+            <code>does each diagram convey its meaning at a glance?</code>.
+          </p>
+          <p>
+            For
+            <code
+              >migrating to the new design (VIPER) and deciding on Swift Concurrency adoption</code
+            >, while taking advantage of the greenfield environment, I held firm on the stance of
+            not making technology an end in itself. Even when tempted to fully adopt Swift
+            Concurrency or SwiftUI, I deliberately chose conventional technologies when the
+            trade-offs — <code>significantly reduced readability</code> or
+            <code>additional implementation required solely to use the API</code> — led to a
+            different conclusion. A representative example is the policy of keeping UIKit at the
+            center of screen implementation. By consistently holding the position that "the design
+            document comes first, and the most appropriate technology is selected for that design,"
+            I achieved a structure where old and new technologies combine as a design-driven
+            necessity.
+          </p>
+          <p>
+            For <code>operating development with AI and MCP built in</code>, integrated generative
+            AI tools — Claude Code, Codex, and Cursor — into daily development and pursued
+            operational practices that stabilize output quality at a production-grade level. As a
+            personal OSS that reinforces this approach, I designed and implemented
+            <code>SwiftGuidelinesMCP</code>, an MCP server that lets AI reference Apple's official
+            Swift API Design Guidelines, and published it on GitHub. I continuously improve it while
+            using it heavily in my own daily development, and it serves as a practical foundation
+            for stabilizing AI output quality. For the team, I contributed to formulating and
+            sharing AI usage guidelines.
+          </p>
+          <p>
+            What runs through all of the above is the principle of
+            <code>how to build features that are easy to discard</code>. As the foundation that
+            supports this practice, I deeply studied two books —
             <code>Writing Skills for Scientists and Engineers</code> and
-            <code>The Art of Readable Code</code>. Reading these not only helped practice building
-            disposable features but also improved the accuracy of AI-generated output and served as
-            a defense against ambiguous AI results.
+            <code>The Art of Readable Code</code> — and applied them across both prose and naming.
+            This effort not only contributed to building "discardable features" but also functioned
+            as improving the accuracy of AI-generated output and a defense against ambiguous AI
+            results, creating a state where writing, code, and AI usage can all be driven by the
+            same principles.
           </p>
           <h1>Key Words</h1>
           <p>
-            Vibe Engineering / Claude Code / Codex / Cursor / MCP (Model Context Protocol) /
-            Technical Writing / Design Documentation / Productivity
+            Swift, SwiftUI, UIKit, Swift Concurrency, VIPER, SwiftPM, XCTest, Swift Testing, CI/CD,
+            Vibe Engineering, Claude Code, Codex, Cursor, MCP (Model Context Protocol), Technical
+            Writing, Design Documentation, Productivity
           </p>
           <h1>Links</h1>
           <p>
