@@ -40,21 +40,58 @@
           <h1>Overview</h1>
           <p>
             Joined on secondment to the team developing the @cosme cosmetics retail app. Through
-            this team's development, learned two things:
-            <code>developing apps with many features</code> and
-            <code>setting up a dev environment for iOS 15</code>. Learned the necessity of
-            separating responsibilities in feature-rich apps. Made the project buildable in Xcode
-            13.
+            this team's development, learned
+            <code>how to migrate legacy implementations to modern ones without regressions</code>.
           </p>
           <h1>Description</h1>
           <p>
             From April 2022 to December 2022, joined on secondment to the @cosme cosmetics retail
-            app development team. This team performed two activities:
-            <code>development of the @cosme app</code> and
-            <code>operations and maintenance of the @cosme app</code>.
+            app development team. On this team, I took on five assignments:
+            <code>renewal of the product search screen</code>,
+            <code>Xcode 14 upgrade support</code>, <code>renewal of the app's tab bar</code>,
+            <code>API client implementation with KMM</code>, and
+            <code>renewal of the product detail screen</code>.
+          </p>
+          <p>
+            Of the five assignments, the largest in scale was
+            <code>the SwiftUI adoption kicked off by the tab bar renewal</code>. As the first step
+            for the team and organization to move toward SwiftUI, I proposed positioning the 5-tab
+            tab bar as the initial adoption point, and led everything from building consensus to the
+            technical selection and design. While the implementation itself was shared, I fully took
+            on the rationale behind decisions such as "why SwiftUI" and "how to coexist with the
+            existing assets".
+          </p>
+          <p>
+            The biggest trade-off was
+            <code>interoperability with the existing UIKit screens</code>. Even if only the tab bar
+            is migrated to SwiftUI, each tab still hosts a large body of UIKit screen assets. I
+            verified an approach in which UIKit screens are embedded under a SwiftUI tab bar via
+            <code>UIHostingController</code>. The verification also dug into non-obvious behaviors,
+            such as push transitions degrading into modal presentations when UIKit screens are
+            placed under a UINavigationController via UIViewControllerRepresentable, and I published
+            the findings as a technical article so that the knowledge could be reused outside of the
+            team.
+          </p>
+          <p>
+            The renewal itself was completed within a month, while simultaneously achieving
+            <code>a regression-free production release</code>,
+            <code>reduction in UI code and improved readability</code>, and
+            <code>easier tab additions and design changes</code>. There was no adverse impact on
+            crash rate or performance. Beyond a mere screen refresh, the work left both a foundation
+            and team-wide knowledge for subsequent SwiftUI migration across other screens, producing
+            an impact that went well beyond the implementation itself.
           </p>
           <h1>Key Words</h1>
-          <p>Swift, UIKit, XIB, Storyboard, OpenGLES, Metal, MVP, Legacy Code Refactoring</p>
+          <p>
+            Swift, SwiftUI, UIKit, RxSwift, Combine, CryptoSwift, Firebase, Kotlin, Ktor, Quick,
+            Nimble, KMM, CocoaPods, Carthage, Bitrise, DeployGate, GitHub Actions
+          </p>
+          <h1>Links</h1>
+          <p>
+            <a href="https://zenn.dev/kok_i/articles/a6fe7f9d85d612" target="_blank"
+              >Adding a VC under UIViewControllerRepresentable to a UINavigationController — Zenn</a
+            >
+          </p>
         </div>
       </div>
     </div>

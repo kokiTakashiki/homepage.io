@@ -47,10 +47,27 @@
               >KMMによるAPI client実装</code
             >・<code>商品詳細画面のリニューアル</code>の5つを担当した。
           </p>
+          <p>
+            担当した5件の中で規模が最も大きかったのが、<code>タブバーリニューアルを起点としたSwiftUI導入</code>である。チーム/組織としてSwiftUI化を進めていくための第一歩として、5タブ構成のタブバーを最初の導入ポイントに据えることを提案し、合意形成から技術選定・設計までを主導した。実装は分担しつつも、「なぜSwiftUIか」「どう既存資産と共存させるか」といった判断の裏付けは全面的に引き受けた。
+          </p>
+          <p>
+            最大のトレードオフは<code>既存UIKit画面との相互運用</code>であった。タブバーだけをSwiftUI化しても、各タブ配下には大量のUIKit画面資産が残る。そこで
+            <code>UIHostingController</code>
+            を介してUIKit画面をSwiftUI製タブバー配下に抱え込む方式を検証した。検証の過程では、UINavigationController配下にUIViewControllerRepresentable経由のUIKit画面を組み込んだ際にプッシュ遷移がモーダルに化けるといった非自明な挙動にも踏み込み、得た知見はチーム外にも再利用できるよう技術記事として公開した。
+          </p>
+          <p>
+            リニューアル自体は1ヶ月未満の短期で完遂しつつ、<code>デグレなしでの本番リリース</code>・<code>UIコード量の削減と可読性向上</code>・<code>タブ追加やデザイン変更の容易化</code>を同時に実現した。クラッシュ率やパフォーマンスへの悪影響は発生していない。単なる画面刷新に留まらず、後続の他画面SwiftUI化を進めるための足場とチーム内ナレッジを残せた点で、個人の実装以上の波及効果があったと捉えている。
+          </p>
           <h1>key words</h1>
           <p>
-            Swift, RxSwift, Combine, CryptoSwift, Firebase, Kotlin, Ktor, Quick, Nimble, KMM,
-            CocoaPods, Carthage, Bitrise, DeployGate, GitHub Actions
+            Swift, SwiftUI, UIKit, RxSwift, Combine, CryptoSwift, Firebase, Kotlin, Ktor, Quick,
+            Nimble, KMM, CocoaPods, Carthage, Bitrise, DeployGate, GitHub Actions
+          </p>
+          <h1>links</h1>
+          <p>
+            <a href="https://zenn.dev/kok_i/articles/a6fe7f9d85d612" target="_blank"
+              >UINavigationControllerにUIViewControllerRepresentable配下のVCを加える — Zenn</a
+            >
           </p>
         </div>
       </div>
